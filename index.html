@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- carousel  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="menu-bar" class="fas fa-bars"></div>
+      <a href="#" class="logo"><span>T</span>ravel</a>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#booking">Booking</a>
+        <a href="#package">Packages</a>
+        <a href="#service">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="icons">
+        <i class="fas fa-user" id="login-btn"></i>
+        <i class="fas fa-search" id="search-btn"></i>
+      </div>
+
+      <form class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="searching for..." />
+        <label for="search-bar" class="fas fa-search"></label>
+      </form>
+    </header>
+    <div class="login-form-container">
+      <i class="fas fa-times" id="form-close"></i>
+      <form>
+        <h3>Login</h3>
+        <input type="email" class="box" placeholder="email" />
+        <input type="password" class="box" placeholder="password" />
+        <input type="submit" value="login now" class="btn" />
+        <input type="checkbox" name="" id="remember-me" />
+        <label for="remember-me">Remember me</label>
+        <p>Forget password? <a href="#">Click here</a></p>
+        <p>Don't have an account? <a href="#">Register now</a></p>
+      </form>
+    </div>
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Adventure is worthwhile</h3>
+        <p>Dicover new places with us, adventure awaits</p>
+        <a href="#" class="btn">Discover more</a>
+      </div>
+      <div class="controls">
+        <span class="img-btn active" data-src="assets/img01.jpg"></span>
+        <span class="img-btn" data-src="assets/img02.jpg"></span>
+        <span class="img-btn" data-src="assets/img03.jpg"></span>
+        <span class="img-btn" data-src="assets/img04.jpg"></span>
+        <span class="img-btn" data-src="assets/img05.jpg"></span>
+      </div>
+      <div class="image-container">
+        <img src="./assets/img01.jpg" class="img-slider" alt="adventure" />
+      </div>
+    </section>
+    <section class="booking" id="booking">
+      <div class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+      </div>
+      <div class="row">
+        <div class="banner">
+          <img src="./assets/passport.png" alt="booking" />
+        </div>
+        <form action="">
+          <div class="input-box">
+            <p>where to</p>
+            <input type="text" />
+          </div>
+          <div class="input-box">
+            <p>how many</p>
+            <input type="number" />
+          </div>
+          <div class="input-box">
+            <p>arrivals</p>
+            <input type="date" />
+          </div>
+          <div class="input-box">
+            <p>leaving</p>
+            <input type="date" />
+          </div>
+          <input type="submit" value="book now" class="btn" />
+        </form>
+      </div>
+    </section>
+    <section class="packages" id="package">
+      <div class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+      </div>
+      <div class="row"></div>
+    </section>
+    <section class="services" id="service">
+      <div class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+      </div>
+      <div class="row"></div>
+    </section>
+    <section class="gallery" id="gallery">
+      <div class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+      </div>
+      <div class="row"></div>
+    </section>
+    <section class="reviews" id="review">
+      <div class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+      </div>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="./assets/user01.jpg" alt="user01" />
+          <h3>Anna Doe</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quod
+            ipsum, repellendus molestias natus ad laudantium pariatur mollitia
+            maxime doloremque!
+          </p>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./assets/user05.jpg" alt="user01" />
+          <h3>Peter Doe</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quod
+            ipsum, repellendus molestias natus ad laudantium pariatur mollitia
+            maxime doloremque!
+          </p>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./assets/user02.jpg" alt="user01" />
+          <h3>John Doe</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quod
+            ipsum, repellendus molestias natus ad laudantium pariatur mollitia
+            maxime doloremque!
+          </p>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./assets/user03.jpg" alt="user01" />
+          <h3>Linda Doe</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quod
+            ipsum, repellendus molestias natus ad laudantium pariatur mollitia
+            maxime doloremque!
+          </p>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./assets/user04.jpg" alt="user01" />
+          <h3>Anna Doe</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quod
+            ipsum, repellendus molestias natus ad laudantium pariatur mollitia
+            maxime doloremque!
+          </p>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./assets/user06.jpg" alt="user01" />
+          <h3>Anna Doe</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quod
+            ipsum, repellendus molestias natus ad laudantium pariatur mollitia
+            maxime doloremque!
+          </p>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+      </div>
+      <div class="row">
+        <div class="image">
+          <img src="./assets/tourist.png" alt="contact-us" />
+        </div>
+        <form action="">
+          <div class="input-box">
+            <input type="text" placeholder="name" />
+            <input type="email" placeholder="email" />
+          </div>
+          <div class="input-box">
+            <input type="number" placeholder="number" />
+            <input type="text" placeholder="subject" />
+          </div>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="8"
+            placeholder="message"
+          ></textarea>
+          <input type="submit" class="btn" value="send message" />
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="item">
+        <h3>about us</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+          repellendus, excepturi iusto quasi veritatis placeat.
+        </p>
+      </div>
+      <div class="item">
+        <h3>branch locations</h3>
+        <ul>
+          <li><a href="#">usa</a></li>
+          <li><a href="#">japan</a></li>
+          <li><a href="#">myanma</a></li>
+          <li><a href="#">vietnam</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h3>quick links</h3>
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">booking</a></li>
+          <li><a href="#">pakages</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">gallery</a></li>
+          <li><a href="#">reviews</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h3>follow us</h3>
+        <ul>
+          <li><a href="#">facebook</a></li>
+          <li><a href="#">instagram</a></li>
+          <li><a href="#">twitter</a></li>
+          <li><a href="#">linkein</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
