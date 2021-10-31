@@ -72,6 +72,14 @@ const galleryBox = document.querySelector(".gallery .row");
 // const reviewBox = document.querySelector(".reviews .owl-carousel");
 
 const renderPackages = packages.map((item) => {
+  let rating = "";
+  for (let i = 1; i <= 5; i++) {
+    if (i <= item.star) {
+      rating += '<i class="fas fa-star"></i>';
+    } else {
+      rating += '<i class="far fa-star"></i>';
+    }
+  }
   return `
         <div class="box">
           <img src="${item.image}" alt="${item.name}" />
@@ -81,11 +89,7 @@ const renderPackages = packages.map((item) => {
               ${item.desc}
             </p>
             <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
+              ${rating}
             </div>
             <div class="price">$${item.discountPrice}.00 <span>$${item.price}.00</span></div>
             <a href="#" class="btn">book now</a>

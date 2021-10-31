@@ -29,7 +29,7 @@ input {
 }
 
 .btn {
-  padding: 1rem 6rem;
+  padding: 1rem 4rem;
   background: #e67e22;
   color: #fff;
   font-size: 1.5rem;
@@ -43,7 +43,8 @@ input {
   color: #e67e22;
 }
 
-section {
+section,
+footer {
   padding: 2rem 9%;
 }
 
@@ -131,6 +132,7 @@ header .navbar a:hover {
 }
 
 header .icons i {
+  width: 2rem;
   font-size: 2rem;
   color: #fff;
   cursor: pointer;
@@ -254,10 +256,6 @@ header .search-bar-container label:hover {
 
 .login-form-container form #remember-me {
   margin: 1rem 0;
-}
-
-.login-form-container form #remember-me:checked {
-  background: #e67e22;
 }
 
 .login-form-container form label {
@@ -634,8 +632,8 @@ section.contact .row {
 
 section.contact .row .image {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 45rem;
-          flex: 1 1 45rem;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
 }
 
 section.contact .row .image img {
@@ -669,7 +667,9 @@ section.contact .row form .input-box {
 }
 
 section.contact .row form .input-box input {
-  width: 49%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 23rem;
+          flex: 1 1 23rem;
   font-size: 1.5rem;
   padding: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.3);
